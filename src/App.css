@@ -75,7 +75,7 @@ main {
 .input-container {
     display: flex;
     flex-direction: column;
-    margin-bottom: 12px;
+    margin-bottom: 18px;
     position: relative;
 }
 
@@ -107,7 +107,6 @@ main {
     background-color: white;
     border: 1px solid;
     position: absolute;
-    display: none;
     border-radius: 4px;
     overflow: hidden;
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
@@ -122,11 +121,12 @@ main {
 .context-menu div:hover {
     background-color: #ddd;
 }
-.error{
+
+.error {
     font-size: 12px;
     color: red;
     margin: 0;
-    position: relative;
+    position: absolute;
     top: 100%;
 }
 @media (max-width: 900px) {
