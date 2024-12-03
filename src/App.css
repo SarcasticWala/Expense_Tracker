@@ -1,8 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Nunito:wght@300;400;600;700;800;900&family=Russo+One&family=Spartan:wght@700;800;900&display=swap");
 
 body {
-    font-family:  "Nunito", sans-serif;
+    font-family: "Nunito", sans-serif;
     margin: 0 32px;
+    background-image: linear-gradient(to bottom, #f2f2f2, #fff); /* Add this line */
+    background-repeat: no-repeat; /* Add this line */
+    height: 100vh;
 }
 
 main {
@@ -122,6 +125,10 @@ main {
     background-color: #ddd;
 }
 
+.clear-sort {
+    cursor: pointer;
+}
+
 .error {
     font-size: 12px;
     color: red;
@@ -137,4 +144,91 @@ main {
     .expense-tracker {
         flex-direction: column;
     }
+}/* Add a new class to style the expense tracker header */
+.expense-tracker-header {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+/* Update the expense tracker to include a header */
+.expense-tracker {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+/* Update the expense form to include a header */
+.expense-form {
+    width: 100%;
+    margin-top: 16px;
+}
+
+/* Update the expense table to include a header */
+.expense-table {
+    width: 100%;
+    border-collapse: collapse;
+    align-self: flex-start;
+    margin-top: 16px;
+}
+
+/* Add a new class to style the error messages */
+.error-message {
+    font-size: 12px;
+    color: red;
+    margin: 0;
+    position: absolute;
+    top: 100%;
+}
+
+/* Update the error class to use the new error-message class */
+.error {
+    font-size: 12px;
+    color: red;
+    margin: 0;
+    position: absolute;
+    top: 100%;
+}
+
+/* Add a new class to style the input containers */
+.input-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+    position: relative;
+}
+
+/* Update the input-container class to include a label */
+.input-container label {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+/* Update the input-container class to include an input */
+.input-container input {
+    height: 28px;
+    font-family: inherit;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Add a new class to style the add button */
+.add-btn {
+    width: 100%;
+    height: 32px;
+    font-size: 18px;
+    font-family: inherit;
+    margin-top: 8px;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Update the add-btn class to include a hover effect */
+.add-btn:hover {
+    background-color: #3e8e41;
 }
