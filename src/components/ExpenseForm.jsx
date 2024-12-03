@@ -2,13 +2,8 @@ import React, { useEffect, useRef, useState } from 'react'
 import Input from './Input'
 import Select from './Select'
 
-export default function ExpenseForm({ setExpenses }) {
-  const [expense, setExpense] = useState({
-    title: '',
-    category: '',
-    amount: '',
+export default function ExpenseForm({expense,setExpense, setExpenses, editingRowId }) {
 
-  })
 
   const [errors, setErrors] = useState({})
 
@@ -104,7 +99,7 @@ export default function ExpenseForm({ setExpenses }) {
         error={errors.amount}
       />
   
-      <button className="add-btn">Add</button>
+      <button className="add-btn"> {editingRowId?'Save': 'Add'}</button>
     </form>
   )
 }
